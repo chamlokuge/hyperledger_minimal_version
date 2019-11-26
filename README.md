@@ -62,6 +62,17 @@ Then we need to bring up the first network for Fabcar again.
   
   node apiserver.js
    ```
+API server opens for external access through 8080 and it is accessed through the localhost.  
+
+**To query all car records**  
+```
+curl http://18.234.121.178:8080/api/queryallcars
+```
+
+
+
+
+
   
   
   
