@@ -32,13 +32,10 @@ To clean the network
   
 ExpressJS provides an easy way of API implementation. This project is aimed to build the followng APIs.
 
-    GET /api/queryallcars
-    
-    GET /api/query/CarID
-    
-    POST /api/addcar/ with detail in body
-    
-    PUT /api/changeowner/CarID
+    * GET /api/queryallcars
+    * GET /api/query/CarID
+    * POST /api/addcar/ 
+    * PUT /api/changeowner/CarID
  
 Let rebuild a new environment by cleaning up the fabric network.  
 ```
