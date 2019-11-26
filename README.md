@@ -46,25 +46,25 @@ Let rebuild a new environment by cleaning up the fabric network.
   ./byfn.sh down  
  ```
 Then we need to bring up the first network for Fabcar again.
-
+```
   cd /fabric-samples/fabcar  
   ./startFabric.sh  
-  
+  ```
  After the first network is up and running, we'll open the apiserver directory in the fabcar and install the two packages for the ExpressJS.
- 
-  cd /fabric-samples/fabcar/apiserver
-  npm init
-  npm install express body-parser --save
- 
+ ```
+  cd /fabric-samples/fabcar/apiserver  
+  npm init  
+  npm install express body-parser --save  
+ ```
  Then we'll remove the wallet and recreate the user1 certificate through registerUser.js.
- 
-  cd /fabric-samples/fabcar/apiserver
-  rm -rf wallet
-  node enrollAdmin.js
-  node registerUser.js
+ ```
+  cd /fabric-samples/fabcar/apiserver  
+  rm -rf wallet  
+  node enrollAdmin.js  
+  node registerUser.js  
   
   node apiserver.js
-   
+   ```
   
   
   
