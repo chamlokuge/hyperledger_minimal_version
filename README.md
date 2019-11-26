@@ -74,16 +74,24 @@ curl http://localhost:8080/api/query/CAR0
 ```  
 **To add a new car**  
 ```
-curl -d '{"carid":"CAR12","make":"Nissan","model":"R34","colour":"grey","owner":"Chamodi Lokuge"}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/addcar
+curl -d '{"carid":"CAR15","make":"Nissan","model":"R34","colour":"grey","owner":"Chamodi Lokuge"}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/addcar
 ```  
 **To query all cars again**  
 ```
-curl http://1localhost:8080/api/queryallcars
+curl http://localhost:8080/api/queryallcars
 ```
 **To change the owner of a specific car**  
 ```
 curl -d '{"owner":"Chamodi"}' -H "Content-Type: application/json" -X PUT http://localhost:8080/api/changeowner/CAR1
+```  
+It's always the best practice to clean up the fabric environment and also to completely remove the stopped containers and unused docker images.  
 ```
+cd /fabric-samples/first-network  
+./byfn.sh down
+docker rm $(docker ps -aq)
+docker rmi $(docker images dev-* -q)
+```  
+
 
 
 
