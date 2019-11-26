@@ -1,7 +1,7 @@
 # hyperledger_test
 This is a minimalist version of fabric samples repository. This project extends the Fabcar chaincode in hyperledger fabric repository and uses Hyperledger Fabric 1.4.3 in the implemention.
 
-**Prerequisites in accordance with hyperledger fabric v1.4 documentation** https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html
+**Prerequisites in accordance with hyperledger fabric v1.4 documentation**  (https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html )
 1. curl latest version
 2. docker version 17.06.2-ce or greater
 3. docker compose version 1.14.0 or greater
@@ -11,10 +11,10 @@ This is a minimalist version of fabric samples repository. This project extends 
 7. python
 
 'First network' in the fabric samples can be used to test the setting up of the fabric environment.
-
+```
   cd fabric-samples/first-network   
   ./byfn.sh up
-  
+ ``` 
 On successful execution, you'll see the below message
   
   ================ All GOOD , BYFN execution completed ===============
