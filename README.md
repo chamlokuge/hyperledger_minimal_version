@@ -21,11 +21,9 @@ On successful execution, you'll see the below message
   
 To clean the network
   
-  ./byfn down
-  
-  docker rm $(docker ps -aq)
-  
-  docker rmi $(docker images dev-* -q)
+  ./byfn down  
+  docker rm $(docker ps -aq)  
+  docker rmi $(docker images dev-* -q)  
   
   
   .................................................................................................................................
