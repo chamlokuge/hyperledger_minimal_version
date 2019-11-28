@@ -1,5 +1,5 @@
 # hyperledger_test
-This is a minimalist version of fabric samples repository. This project extends the Fabcar chaincode in hyperledger fabric repository and uses Hyperledger Fabric 1.4.3 in the implemention.
+This project extends the Fabcar chaincode in hyperledger fabric repository and uses Hyperledger Fabric 1.4.3 in the implemention.
 
 **Prerequisites in accordance with hyperledger fabric v1.4 documentation**  (https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html )
 1. curl latest version
